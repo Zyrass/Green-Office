@@ -48,7 +48,7 @@ header {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  height: 150px;
+  height: 120px;
 }
 header img {
   margin-left: 40px;
@@ -85,7 +85,7 @@ main {
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 40px;
+  padding: 30px 80px 0 40px;
 }
 h2,
 h3 {
