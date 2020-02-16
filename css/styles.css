@@ -31,8 +31,8 @@ body {
  * -----------------------------------------------------------------------------
  */
 header, main, footer {
-  min-width: 95%;
-  max-width: 95%;
+  min-width: 85%;
+  max-width: 85%;
   margin: 0 auto;
 }
 
@@ -48,13 +48,11 @@ header {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  height: 180px;
+  height: 150px;
 }
-
 header img {
   margin-left: 40px;
 }
-
 header nav ul {
   display: flex;
   flex-direction: row;
@@ -82,6 +80,88 @@ header nav ul li a:last-child {
 main {
   grid-area: main;
   background-color: var(--white);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 40px;
+}
+h2,
+h3 {
+  color: var(--green);
+  margin-bottom: 20px;
+}
+h2 {
+  text-transform: uppercase;
+}
+
+
+/**
+ * -----------------------------------------------------------------------------
+ * Main .container_left / .container_right
+ * -----------------------------------------------------------------------------
+ */
+.container_left p,
+.container_right p {
+  white-space: pre-line;
+}
+
+.container_left button,
+.container_right button {
+  margin-top: 20px;
+  margin-right: 20px;
+  padding: 10px;
+  background-color: var(--green);
+  color: var(--white);
+  border-radius: 3%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/**
+ * -----------------------------------------------------------------------------
+ * Main .container_left
+ * -----------------------------------------------------------------------------
+ */
+.container_left {
+  max-width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 40px 40px 40px;
+  border-right: 2px solid #ddd;
+}
+.container_left img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.container_left button {
+  align-self: flex-end;
+}
+
+/**
+ * -----------------------------------------------------------------------------
+ * Main .container_right
+ * -----------------------------------------------------------------------------
+ */
+.container_right {
+  max-width: 60%;
+  padding-left: 40px;
+}
+.container_right img {
+  float: left;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  width: 50%;
+}
+.container_right ul {
+  margin-top: 20px;
+  margin-left: 100px;
+}
+.container_right button {
+  float: right;
 }
 
 /**
@@ -90,5 +170,9 @@ main {
  * -----------------------------------------------------------------------------
  */
 footer {
+  clear: both;
   grid-area: footer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
